@@ -6,6 +6,8 @@ $(document).ready(function() {
   });
 
   // ask for your name
-   var Q1 = prompt("Brothers and sisters I have none but this man's father is my father's son. Who is the man?" ).toUpperCase();
+var name = prompt("What's your name");
+//The question you find you will go ahead but if you anwser it wrong you would die
+
 
 });
