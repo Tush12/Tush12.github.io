@@ -1,4 +1,4 @@
-//this is my JS file
+///this is my JS file
 $(document).ready(function() {
 
   $("#start").click(function() {
