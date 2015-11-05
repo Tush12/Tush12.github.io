@@ -1,8 +1,11 @@
 //this is my JS file
-<button onClick="document.getElementById('d3').style.display='block'"></button>
-$(#Start).(click(function() {
-	$(#bodyID).css("background", "url('images/bg.jpg')");
-)};
-// ask for your name
-var name = prompt("What is your name?"):
-// 
+$(document).ready(function() {
+
+  $("#start").click(function() {
+    $("#start").hide();
+  });
+
+  // ask for your name
+   var Q1 = prompt("Brothers and sisters I have none but this man's father is my father's son. Who is the man?" ).toUpperCase();
+
+});
