@@ -28,7 +28,7 @@ var q2ready=0;
 
   switch(Q1) {
 // ANSWERS also have the add the cash together and have the moneyearned and bank balance
-    case "SON":
+    case "Me":
         alert("Excellent you may pass");
         Q2ready=1;
         var Life = Life + 1;
@@ -53,8 +53,72 @@ var q2ready=0;
           }
         break;
     }
+// QUESTION 2
+if (Q2ready===1) {
+    var Q2 = prompt("What is greater than God,more evil than the devil,the poor have it,the rich need it,and if you eat it, you'll die?").toUpperCase();
 
+var q3ready=0;
 
+  switch(Q2) {
+//ANSWERS 
+    case "NOTHING":
+        alert("Excellent You Made It");
+        Q3ready=1;
+        var Life = Life + 1;
+        alert ("Your Life is " + Life);
+        break;
+    default:
+//LIFELINE/MATHQUESTION
+         lifelineCheck();
+         lifeline--;
+         alert("OH NO!! Wrong Answer - Now you have to lose " + Life);
+         alert("Answer this math problem to skip the question, if you fail game over"); 
+        var L1 = prompt("0-10=?");
+          switch(L1) {
+            case '-10':
+              Q3ready=1;
+              alert("Amazing you saved yourself! You get to move to Question 3");
+              break;
+            default:
+              alert("Sorry you died bye bye!");
+              break;
+          }
+        break;
+    }
+}
+// QUESTION 3
+if (Q3ready===1) {
+    var Q3 = prompt("Who makes it, has no need of it.Who buys it, has no use for it. Who uses it can neither see nor feel it. What is it?").toUpperCase();
+
+var q4ready=0;
+
+  switch(Q3) {
+      //ANSWERS 
+    case "COFFIN":
+        alert("Excellent you made it");
+        Q4ready=1;
+        var Life = Life + 100;
+        alert ("You Life is $" + Life);
+        break;
+    default:
+      //LIFELINE/MATHQUESTION
+        lifelineCheck();
+        lifeline--;
+        alert("OH NO!! Wrong Answer - Now you have lose a Life " + Life);
+        alert("Answer this math problem to save yourself, if you fail game over"); 
+        var L1 = prompt("-1+1=?");
+          switch(L1) {
+            case '0':
+              Q4ready=1;
+              alert("Amazing you saved yourself, but you get to move to Question 4");
+              break;
+            default:
+              alert("Sorry you died. Bye bye!");
+              break;
+          }
+        break;
+    }
+}
 
 
 
