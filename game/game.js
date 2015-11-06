@@ -5,6 +5,8 @@ $(document).ready(function() {
     $("#start").hide();
   });
 
+
+});
   // ask for your name
 var name = prompt("What's your name");
 //The question you find you will go ahead but if you anwser it wrong you would die
@@ -190,11 +192,3 @@ if (Q21ready===1) {
    alert("You Win The Game. Thank You For Playing Riddler's Riddle.");
 }  
  
-
-
-
-
-
-
-
-});
