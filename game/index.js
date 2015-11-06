@@ -1,10 +1,3 @@
-//this is my JS file
-button onClick="document.getElementById('d3').style.display='block'"></button>
-$('#start').(click(function() {
-  $('body').css("background", "url('images/bg.jpg')");
-)};
-
-  // ask for your name
 var name = prompt("What's your name");
 //The question you find you will go ahead but if you anwser it wrong you would die
 var Life=1
