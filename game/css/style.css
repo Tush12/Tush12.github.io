@@ -6,6 +6,8 @@ body{
   Color: #753A0
 }
 
-.bat{
-  margin-top:700px;
+#author {
+  margin-top: 500px;
+  margin-left: 500px;
+  display: block;
 }
