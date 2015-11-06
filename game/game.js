@@ -118,7 +118,78 @@ var q4ready=0;
           }
         break;
     }
+}                                             
+if (Q4ready===1) {
+    var Q4 = prompt("Forward I am heavy, but backward I am not. What am I?").toUpperCase();
+
+var q5ready=0;
+
+  switch(Q4) {
+      //ANSWERS 
+    case "TON":
+        alert("Excellent you made pass");
+        Q5ready=1;
+        var Life = Life + 1;
+        alert ("You Life is" + Life);
+        break;
+    default:
+      //LIFELINE/MATHQUESTION
+        Life();
+        Lifeu--;
+        alert("OH NO!! Wrong Answer - Now you have to lose a Life" + Life);
+        alert("Answer this math problem to skip the question, if you fail game over"); 
+        var L1 = prompt("56+82=?");
+          switch(L1) {
+            case '138':
+              Q5ready=1;
+              alert("Amazing you saved yourself, but you get to move to Question 5");
+              break;
+            default:
+              alert("Sorry you made $"+ moneyearned +" bye bye!");
+              break;
+          }
+        break;
+    }
 }
+// QUESTION 5
+if (Q5ready===1) {
+    var Q20 = prompt("What invention lets you look right through a wall?").toUpperCase();
+
+var q1ready=0;
+
+  switch(Q5) {
+      //ANSWERS 
+    case "WINDOW":
+        alert("Excellent you made $100");
+        Q21ready=1;
+        var moneyearned = moneyearned + 100;
+        alert ("You bank balance is $" + moneyearned);
+        break;
+    default:
+      //LIFELINE/MATHQUESTION
+        lifelineCheck();
+        lifeline--;
+        alert("OH NO!! Wrong Answer - Now you have to try to use a lifeline " + lifeline); 
+        alert("Answer this math problem to skip the question, if you fail you lose"); 
+        var L1 = prompt("49+51=?");
+          switch(L1) {
+            case '100':
+              Q21ready=1;
+              alert("Amazing you saved yourself");
+              break;
+            default:
+              alert("Sorry Game OVER" bye bye!");
+              break;
+          }
+        break;
+    }
+}
+// GAMEOVER
+if (Q21ready===1) {
+   alert("YOU REACHED THE END OF THE GAME!!!"); 
+   alert("You Win The Game. Thank You For Playing Riddler's Riddle.");
+}  
+ 
 
 
 
